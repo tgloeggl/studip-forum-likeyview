@@ -13,7 +13,7 @@
     <tbody>
     <? foreach($overview as $entry) : ?>
         <tr>
-            <td><?= get_fullname($entry['user_id']) ?></td>
+            <td><?= htmlReady(get_fullname($entry['user_id'])) ?></td>
             <td><?= $entry['ges'] ?></td>
         </tr>
     <? endforeach ?>
@@ -33,7 +33,7 @@
     <tbody>
     <? foreach($entries as $entry) : ?>
         <tr>
-            <td><?= get_fullname($entry['user_id']) ?></td>
+            <td><?= htmlReady(get_fullname($entry['user_id'])) ?></td>
             <? $description = ForumEntry::killFormat(ForumEntry::killEdit($entry['content'])) ?>
             <td><?= htmlReady(substr($description, 0, 150)) ?>
         </tr>
