@@ -16,7 +16,7 @@ class ForumLikey extends StudIPPlugin implements StandardPlugin {
         parent::__construct();
 
         if (Navigation::hasItem('/course/forum2')) {
-            $nav = new Navigation(_('Beiträge die mir gefallen'), PluginEngine::getURL($this, array(), 'show'));
+            $nav = new Navigation(_('Beiträge, die mir gefallen'), PluginEngine::getURL($this, array(), 'show'));
             Navigation::addItem('/course/forum2/likes', $nav);
         }
     }
