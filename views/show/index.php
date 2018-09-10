@@ -1,13 +1,13 @@
-<h1><?= _('Beitr‰ge, die mir gefallen') ?></h1>
+<h1><?= _('Beitr√§ge, die mir gefallen') ?></h1>
 
 <table class="default">
     <caption>
-        <?= _('‹bersicht') ?>
+        <?= _('√úbersicht') ?>
     </caption>
     <thead>
         <tr>
             <th>Autor</th>
-            <th>Anzahl Beitr‰ge</th>
+            <th>Anzahl Beitr√§ge</th>
         </tr>
     </thead>
     <tbody>

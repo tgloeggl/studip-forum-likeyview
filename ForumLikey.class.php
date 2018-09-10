@@ -2,12 +2,8 @@
 require 'bootstrap.php';
 
 /**
- * testx.class.php
- *
- * ...
- *
- * @author  testx
- * @version 0.1a
+ * @author  Till Glöggler <tgloeggl@uos.de>
+ * @version 0.2
  */
 
 class ForumLikey extends StudIPPlugin implements StandardPlugin {
@@ -16,7 +12,7 @@ class ForumLikey extends StudIPPlugin implements StandardPlugin {
         parent::__construct();
 
         if (Navigation::hasItem('/course/forum2')) {
-            $nav = new Navigation(_('Beitr�ge, die mir gefallen'), PluginEngine::getURL($this, array(), 'show'));
+            $nav = new Navigation(_('Beiträge, die mir gefallen'), PluginEngine::getURL($this, array(), 'show'));
             Navigation::addItem('/course/forum2/likes', $nav);
         }
     }
