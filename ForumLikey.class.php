@@ -6,9 +6,11 @@ require 'bootstrap.php';
  * @version 0.2
  */
 
-class ForumLikey extends StudIPPlugin implements StandardPlugin {
+class ForumLikey extends StudIPPlugin implements StandardPlugin
+{
 
-    public function __construct() {
+    public function __construct()
+    {
         parent::__construct();
 
         if (Navigation::hasItem('/course/forum2')) {
